@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/static/style.css">
+	<title>Cats vs Dogs</title>
+</head>
+
+<body class="container">
+	<div class="container-form">
+		<h1>Cats vs Dogs Classificator</h2>
+			{% if filename %}
+			<div>
+				<h4>It is a picture!</h4>
+				<img src="{{url_for('static', filename='/uploads/' + filename)}}" />
+			</div>
+			{% endif %}
+			<form method="post" action="/" enctype="multipart/form-data">
+				<dl>
+					<p>
+						<input class="inp-file" type="file" name="file" autocomplete="off" required>
+					</p>
+				</dl>
+				<p>
+					<input class="sub-btn" type="submit" value="Submit">
+				</p>
+			</form>
+	</div>
+</body>
+
+</html>
