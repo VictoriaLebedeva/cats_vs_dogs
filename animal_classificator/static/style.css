@@ -1,30 +1,50 @@
-*, *:after, *:before {
+*,
+*:after,
+*:before {
     transition: .5s ease-in-out;
- }
+}
 
-.container{
+.container {
     max-width: 100%;
     max-height: 100%;
 }
 
-.container-form h1{
+.container-form h1 {
     font-family: system-ui;
     font-size: 35px;
     font-weight: 800;
     text-decoration: none;
 }
-.container-form{
+
+.container-form p {
+    font-family: system-ui;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container-form img {
+    margin: auto;
+    display: block;
+    width: 60%;
+    height: 60%;
+}
+
+.container-form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.container-form input{
+
+.container-form input {
     font-family: system-ui;
     font-size: 15px;
     font-weight: 800;
 }
-.container-form form{
+
+.container-form form {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -36,19 +56,20 @@
     margin-top: 40px;
 }
 
-.sub-btn{
+.sub-btn {
     background: linear-gradient(145.36deg, rgba(207, 194, 96, 0.4) -4.23%, rgba(8, 154, 27, 0.2) 102.58%);
     border: none;
     border-radius: 10px;
     width: 100px;
     height: 50px;
 }
-.sub-btn:hover{
+
+.sub-btn:hover {
     opacity: 0.6;
     transition: 0.2s
 }
 
-.inp-file{
+.inp-file {
     margin-left: 13%;
     font-family: system-ui;
 }
