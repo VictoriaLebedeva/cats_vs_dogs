@@ -10,7 +10,11 @@ ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 IMG_WIDTH = 256
 IMG_HEIGHT = 256
 labels = ['Cat', 'Dog']
+<<<<<<< HEAD
+model_path = 'animal_classificator/static/models//model_full.h5'
+=======
 model_path = 'animal_classificator/static/models//model_test.h5'
+>>>>>>> c7c4a211ca9139b1f540f869dcae4643943ed7a9
 
 app = Flask(__name__, static_folder="static")
 app.secret_key = "secret key"
